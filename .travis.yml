@@ -12,6 +12,8 @@ install:
   - python3 setup.py install
   - cd ..
   - ls -l
+
+  - pip3 install --upgrade Cython==0.29.19 virtualenv
   - yes | buildozer ios release
   - ls -l
   - ls bin/ -l
