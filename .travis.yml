@@ -10,7 +10,11 @@ install:
   - cd buildozer
   - ls -l
   - python3 setup.py install
-
+  - cd ..
+  - ls -l
+  - yes | buildozer ios release
+  - ls -l
+  - ls bin/ -l
   - echo "TODO"
 
 
