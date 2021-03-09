@@ -14,6 +14,7 @@ install:
   - ls -l
 
   - pip3 install --upgrade Cython==0.29.19 virtualenv
+  - pip3 install pbxproj
   - yes | buildozer ios release
   - ls -l
   - ls bin/ -l
