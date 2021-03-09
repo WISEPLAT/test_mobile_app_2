@@ -1,0 +1,19 @@
+os: osx
+osx_image: xcode12.2
+language: python
+
+python:
+  - 3.8
+
+install:
+  - brew install pkg-config sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer autoconf automake
+  - ls -l
+  - git clone https://github.com/kivy/buildozer.git
+  - ls -l
+  - cd buildozer
+  - ls -l
+  - python3 setup.py install
+
+  - echo "TODO"
+
+
